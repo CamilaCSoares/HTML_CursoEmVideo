@@ -9,6 +9,15 @@
     <meta name="description" content="Site feito no curso de HTML5 do Gustavo Guanabara (curso em vídeo)">
     <meta name="author" content="Camila Carla Soares">
     <title>Tudo Sobre Google Glass</title>
+
+    <style>
+        p{
+            text-align: justify; /*texto justificado*/
+            text-indent: 50px; /* da um espaçamento de 50 pixel no começo do parágrafo */
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -41,9 +50,31 @@ Menu Principal
 </hgroup>
 
 
+
+
+
+
+
+
+
+<!-- a tag <span> pode ser utilizado para formatar pequenos trechos de texto-->
+
 <!-- &shy; <- quando necessário ele quebra a palavra e ainda deixa um hífen aparecendo indicando isso -->
-<h2>O que é</h2>
-<p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+
+<!-- <b> <- deixa em negrito -->
+<!-- <i> <- deixa em italico -->
+<!-- <em> <- deixa a letra inclinada também e "diz" para o navegador que você quer dar ênfase (semântico)-->
+<!-- <del> <- deixa riscado (semântico?)-->
+
+<!-- <u> (sumblinhado substituido pelo css) e <s> (riscado foi substituido pela tag <del>) não existe mais no html5 (mais funciona pq os navegadores estão em fase de adaptação)-->
+
+<h2 style="text-align: center;">O que é</h2>
+<p>O <span style="text-decoration: underline;">Google Glass</span> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <i>Project Glass</i>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes <span style="font-weight: bolder;">anti-furto</span> e de <span style="font-weight: 900;">desbloqueio</span> de tela para o acessório.</p>
+
+<!-- duas formas de fazer negrito 
+    style="font-weight: bolder;
+    style="font-weight: 900; <- dá para colocar o nível
+-->
 
 [AQUI ENTRA UMA FOTO]
 
