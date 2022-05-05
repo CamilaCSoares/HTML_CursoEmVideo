@@ -1,0 +1,57 @@
+@charset "utf8";
+
+/*  cores  */
+/*  rgb/rgba  r<- red g<- green b<- blue (a<- transparência)        */
+/*  #60453E <- 60<- vermelho 45<- verde 3E<- azul                   */
+/*  hls/hlsa <- matiz, saturação, luminosidade (a<- transparência)  */
+
+
+body{
+    background-color: white;
+    color: rgba(0,0,0,1); /*todo texto, o a é nível de transparência, de 0 a 1*/
+}
+p{
+    text-align: justify; /*texto justificado*/
+    text-indent: 50px; /* da um espaçamento de 50 pixel no começo do parágrafo */
+}
+
+/* formatação de imagens com legenda */
+
+/* tag , class*/
+
+div.foto-legenda {
+    position: relative; /* colocar o relative para o seu "filho" ficar absolute nele"*/
+    width: 600px;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);/*espalhamento horizontal, vertical e espalhamento*/
+    text-align: center;
+}
+  
+div.foto-legenda img{
+    width: 100%; /* largura */
+    height: 100%; /* altura */
+}
+
+div.foto-legenda p{
+    text-align: center;
+}
+
+div.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;/*isso tudo para a legenda ficar flutuando na foto com um fundo atrás*/
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s; /*demorar 1 segundo na transição*/
+}
+
+div.foto-legenda:hover figcaption{/*hover vai dispara a formatação específica (no caso o figcaption)*/
+    opacity: 1;
+
+}
+
+
