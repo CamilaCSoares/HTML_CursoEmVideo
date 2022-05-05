@@ -7,12 +7,32 @@
 
 
 body{
-    background-color: white;
+    background-color: #ddd;
     color: rgba(0,0,0,1); /*todo texto, o a é nível de transparência, de 0 a 1*/
 }
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto ; /*cima direita baixo esquerda <- lembra do relógio auto auto <- automático o navegador define*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px; /* 10px envolta de todo conteúdo do site (era para ter 4px, mas como os valores são os mesmo pode informar só 1 vez)*/
+}
+
 p{
     text-align: justify; /*texto justificado*/
     text-indent: 50px; /* da um espaçamento de 50 pixel no começo do parágrafo */
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    right: 190px;
+    top: 40px; /* topo? bom se moveu para cima*/
+    
+}
+
+header#cabecalho {
+
 }
 
 /* formatação de imagens com legenda */
@@ -54,4 +74,45 @@ div.foto-legenda:hover figcaption{/*hover vai dispara a formatação específica
 
 }
 
+/* formatação do menu */
+
+nav#menu {
+    display: block; /* faz ser exibido como bloco, flutua pela tela*/
+
+}
+
+nav#menu ul{
+    list-style: none; /* tirando os marcadores do lado esquerdo*/
+    text-transform: uppercase; /* letras maiusculas */
+    position: absolute; /* para que ele possa passar por cima dos documentos */
+    top: -20px;
+    left: 500px;
+    /* position: relativa <- se move dentro de onde ele estar, absolute <- se move no documento todo/ livre pelo site*/
+}
+
+nav#menu li{
+    display: inline-block; /* faz ser exibido na mesma linha */
+    background-color: #ddd;
+    padding: 10px; /* dar um espaço dentro da caixa*/
+    margin: 2px; /* dar um espaço fora da caixa*/
+    transition: background-color 1s; /* transição / o que vai monitorar */
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline; /* risco embaixo da letra*/
+}
 
